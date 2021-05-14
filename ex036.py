@@ -1,10 +1,11 @@
-nome = 'Guanabara'
-cores = {
-    'limpa': '\033[m',
-    'azul': '\033[34m',
-    'amarelo': '\033[33m',
-    'pretoebranco': '\033[7;30m'
-}
-
-print(f"Olá! Muito prazer em te conhecer, {cores['pretoebranco'], nome, cores['limpa']}")
-
+casa = float(input('Valor da casa: R$'))
+salário = float(input('Salário do comprador: R$'))
+anos = int(input('Quantos anos de financiamento? '))
+prestação = casa / (anos * 12)
+mínimo = salário * 30 / 100
+print(f'Pagar pagar uma casa de R${casa:.2f} em {anos} anos', end='')
+print(f' a prestação será de {prestação:.2f}
+if prestação <= mínimo:
+      print('Empréstimo pode ser CONCEDIDO!')
+else:
+      print('Empréstimo NEGADO!')
